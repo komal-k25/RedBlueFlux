@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hand Elastic Bands</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <h1>✦ Elastic Bands</h1>
+  <div id="status">⌛ Starting camera…</div>
+
+  <div id="container">
+    <video id="webcam" autoplay playsinline muted></video>
+    <canvas id="overlay"></canvas>
+  </div>
+
+  <div class="legend">
+    <div class="legend-item">
+      <div class="dot" style="background:#ff2040;box-shadow:0 0 10px #ff2040aa"></div>
+      Right Hand
+    </div>
+    <div class="legend-item">
+      <div class="dot" style="background:#2080ff;box-shadow:0 0 10px #2080ffaa"></div>
+      Left Hand
+    </div>
+    <div class="legend-item" style="color:#c040ff">↔ elastic bands connect each fingertip</div>
+  </div>
+
+  <!-- MediaPipe CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/hands/hands.js" crossorigin="anonymous"></script>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
